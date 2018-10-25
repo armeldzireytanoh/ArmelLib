@@ -17,7 +17,7 @@ buildscript {
 
 ext {
     bintrayRepo ='ArmelLib'
-    bintrayName ='com.example.armellib'
+    bintrayName ='org.armeldzirey'
 
     publishedGroupId ='com.example.armellib'
     libraryName ='ArmelLib'
@@ -38,6 +38,7 @@ ext {
     licenseUrl ='http://www.apache.org/licenses/LICENSE-2.0.txt'
     allLicenses = ["Apache-2.0"]
 }
+
 
 android {
     compileSdkVersion 28
