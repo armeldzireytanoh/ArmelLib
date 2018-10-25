@@ -19,7 +19,7 @@ ext {
     bintrayRepo ='ArmelLib'
     bintrayName ='org.armeldzirey'
 
-    publishedGroupId ='com.example.armellib'
+    publishedGroupId ='org.armeldzirey'
     libraryName ='ArmelLib'
     artifact ='ArmelLib'
 
