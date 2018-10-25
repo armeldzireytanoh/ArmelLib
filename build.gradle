@@ -1,4 +1,43 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+    }
+}
+
+
+
+
+ext {
+    bintrayRepo ='ArmelLib'
+    bintrayName ='com.example.armellib'
+
+    publishedGroupId ='com.example.armellib'
+    libraryName ='ArmelLib'
+    artifact ='ArmelLib'
+
+    libraryDescription ='librairie de toast'
+
+    siteUrl ='https://github.com/armeldzireytanoh/ArmelLib'
+    gitUrl ='https://github.com/armeldzireytanoh/ArmelLib.git'
+
+    libraryVersion ='1.0'
+
+    developerId ='ArmelDzirey'
+    developerName ='Armel Désiré Tanoh'
+    developerEmail ='ad.tanoh@gmail.com'
+
+    licenseName ='The Apache Software License, Version 2.0'
+    licenseUrl ='http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 
 android {
     compileSdkVersion 28
@@ -32,3 +71,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
+
+//Add these lines to publish library to bintray. This is the readymade scripts made by github user nuuneoi to make uploading to bintray easy.
+//Place it at the end of the file
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
