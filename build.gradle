@@ -17,9 +17,9 @@ buildscript {
 
 ext {
     bintrayRepo ='ArmelLib'
-    bintrayName ='org.armeldzirey'
+    bintrayName ='com.example.armellib'
 
-    publishedGroupId ='org.armeldzirey'
+    publishedGroupId ='com.example.armellib'
     libraryName ='ArmelLib'
     artifact ='ArmelLib'
 
